@@ -59,4 +59,4 @@ The application is also deployed on my own portainer.io based infrastructure (wi
 * UI: https://devoxx2021-redhat-amadeus-contest-ui.comwork.io
 * Restful API: https://devoxx2021-redhat-amadeus-contest-api.comwork.io
 
-![portainer](portainer.png)
+![portainer](./img/portainer.png)
