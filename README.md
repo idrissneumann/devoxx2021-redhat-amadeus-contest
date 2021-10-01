@@ -1,5 +1,7 @@
 # DevoxxFR RedHat for developer's and Amadeus contest
 
+Here's the dummy application that allow me to won this challenge at DevoxxFR 2021 (9 3/4)!
+
 ![devoxxfr](./img/devoxxfr.jpg)
 
 ## Instructions
@@ -10,9 +12,11 @@
 
 ## Used technologies
 
+* Python Flask Restful for the backend part
+* Plain old fascion JQuery and php for the frontend part
+* Docker of course, as always :p
 * Amadeus API SDK: https://github.com/amadeus4dev/amadeus-python
 * RedHat developer sandbox: https://developers.redhat.com/developer-sandbox
-
 
 ## Images available on the docker hub
 
