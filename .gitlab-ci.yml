@@ -54,7 +54,7 @@ deploy:
     - setsid ./ci/deploy.sh
   only:
     refs:
-      - /^(main.*)$/
+      - /^(master.*)$/
     changes:
       - ui/*
       - api/*
