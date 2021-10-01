@@ -22,9 +22,9 @@ echo '{"version":"'"${VERSION}"'", "sha":"'"${sha}"'", "arch":"'"${ARCH}"'"}' > 
 docker_compose_file="docker-compose.yml"
 [[ -f docker-compose-build-${ARCH}.yml ]] && docker_compose_file="docker-compose-build-${ARCH}.yml"
 
-echo "C_USERNAME=$C_USERNAME" > .env
-echo "C_UID=$C_UID" >> .env
-echo "C_HOME=$C_HOME" >> .env
+echo "C_USERNAME=${C_USERNAME}" > .env
+echo "C_UID=${C_UID}" >> .env
+echo "C_HOME=${C_HOME}" >> .env
 
 COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose -f "${docker_compose_file}" build "${IMAGE}"
 

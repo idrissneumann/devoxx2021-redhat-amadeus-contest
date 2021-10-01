@@ -1,5 +1,6 @@
 stages:
   - deliver
+  - deploy
 
 api:
   stage: deliver
@@ -41,6 +42,23 @@ ui_nginx:
     changes:
       - ui/*
       - ci/docker-deliver.sh
+      - docker-compose.yml
+      - Dockerfile
+      - .docker/nginx/*
+  tags:
+    - devoxxfr
+
+deploy:
+  stage: deploy
+  script:
+    - setsid ./ci/deploy.sh
+  only:
+    refs:
+      - /^(main.*)$/
+    changes:
+      - ui/*
+      - api/*
+      - ci/deploy.sh
       - docker-compose.yml
       - Dockerfile
       - .docker/nginx/*
