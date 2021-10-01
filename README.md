@@ -8,6 +8,10 @@ The application is deployed here:
 
 ![devoxxfr](./img/devoxxfr.jpg)
 
+## Table of content
+
+[[_TOC_]]
+
 ## Instructions
 
 ![instructions1](./img/instructions1.jpg)
