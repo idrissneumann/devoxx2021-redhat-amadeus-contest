@@ -16,20 +16,30 @@
 	<body>
 		<div class="appContent">
 			<h1>Amadeus search</h1>
+			<?php
+				$airports = array (
+					"SYD" => "Sydney",
+					"BKK" => "Bankok",
+					"SIN" => "Singapor",
+					"HKG" => "Hong Kong",
+					"CDG" => "Paris CDG",
+					"TUN" => "Tunis carthage"
+				);
+			?>
 			<form name="frmSearch" id="frmSearch" onsubmit="loadFlights('<?php echo $api_url; ?>'); return false;">
 				Origin : <select id="origin">
-					<option value="SYD">Sydney</option>
-					<option value="BKK">Bankok</option>
-					<option value="SIN">Singapor</option>
-					<option value="HKG">Hong Kong</option>
-					<option value="CDG">Paris CDG</option>
+					<?php
+						foreach ($airports as $code => $name){
+							echo "<option value=\"$code\">$name</option>";
+						}
+					?>
 				</select>&nbsp;
 				Destination : <select id="destination">
-					<option value="SYD">Sydney</option>
-					<option value="BKK">Bankok</option>
-					<option value="SIN">Singapor</option>
-					<option value="HKG">Hong Kong</option>
-					<option value="CDG">Paris CDG</option>
+					<?php
+						foreach ($airports as $code => $name){
+							echo "<option value=\"$code\">$name</option>";
+						}
+					?>
 				</select>&nbsp;
 				Departure date : <select id="departure_date">
 				<?php
