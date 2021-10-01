@@ -2,6 +2,8 @@
 
 Here's the dummy application that allow me to won this challenge at DevoxxFR 2021 (9 3/4)!
 
+The application is deployed here: https://devoxx2021-redhat-amadeus-contest-ui.comwork.io
+
 ![devoxxfr](./img/devoxxfr.jpg)
 
 ## Instructions
@@ -44,3 +46,5 @@ Then you can go to:
 ![api](./img/api.png)
 
 ![ui](./img/ui.png)
+
+The application is also deployed on my own infrastructure (with the same containers images): https://devoxx2021-redhat-amadeus-contest-ui.comwork.io
