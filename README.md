@@ -14,6 +14,13 @@
 * RedHat developer sandbox: https://developers.redhat.com/developer-sandbox
 
 
+## Images available on the docker hub
+
+The images are available here:
+* https://hub.docker.com/r/comworkio/devoxxfr-amadeus-api
+* https://hub.docker.com/r/comworkio/devoxxfr-amadeus-ui-fpm
+* https://hub.docker.com/r/comworkio/devoxxfr-amadeus-ui-nginx
+
 ## Local deployment with docker-compose
 
 ```shell
