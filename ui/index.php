@@ -18,17 +18,17 @@
 			<h1>Amadeus search</h1>
 			<?php
 				$airports = array (
-					"SYD" => "Sydney",
-					"BKK" => "Bankok",
-					"SIN" => "Singapor",
-					"HKG" => "Hong Kong",
 					"CDG" => "Paris CDG",
 					"ORY" => "Paris Orly",
 					"TUN" => "Tunis carthage",
 					"CAI" => "Cairo",
 					"MED" => "Madinah",
 					"JED" => "Djeddah",
-					"RUH" => "Riyadh"
+					"RUH" => "Riyadh",
+					"SYD" => "Sydney",
+					"BKK" => "Bankok",
+					"SIN" => "Singapor",
+					"HKG" => "Hong Kong"
 				);
 			?>
 			<form name="frmSearch" id="frmSearch" onsubmit="loadFlights('<?php echo $api_url; ?>'); return false;">
