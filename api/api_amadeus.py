@@ -10,4 +10,4 @@ class AmadeusEndPoint(Resource):
         departure_date = get_arg(args, 'departure_date')
         as_array = cast_boolean(get_arg(args, 'as_array'))
 
-        return flight_offers_search(origin, destination, departure_date)
+        return flight_offers_search(origin, destination, departure_date, as_array)
