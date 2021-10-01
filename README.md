@@ -1,6 +1,6 @@
 # DevoxxFR RedHat for developer's and Amadeus contest
 
-![devoxxfr](./devoxxfr.jpg)
+![devoxxfr](./img/devoxxfr.jpg)
 
 ## Instructions
 
@@ -12,6 +12,18 @@
 
 * Amadeus API SDK: https://github.com/amadeus4dev/amadeus-python
 * RedHat developer sandbox: https://developers.redhat.com/developer-sandbox
+
+
+## Local deployment with docker-compose
+
+```shell
+$ cp .env.dist .env #replace the variable content by your own credentials
+$ docker-compose up -d --force-recreate
+```
+
+Then you can go to:
+* http://localhost:8011 : for the api
+* http://localhost:8012 : for the frontend
 
 ## Openshift deployment
 
