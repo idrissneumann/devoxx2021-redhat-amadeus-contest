@@ -1,7 +1,7 @@
 import sys
 
 from datetime import datetime
-from common_utils import get_env_var, is_true
+from common_utils import get_env_var
 
 def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
