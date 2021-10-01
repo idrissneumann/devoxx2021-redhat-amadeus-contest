@@ -9,7 +9,7 @@ function loadFlights(api_url){
       {"sTitle": "Depature", sWidth: '20%', "sType":"string", "bSortable": true},
       {"sTitle": "Arrival", sWidth: '20%', "sType":"string", "bSortable": true},
       {"sTitle": "Price", sWidth: '20%', "sType":"string", "bSortable": true},
-      {"sTitle": "Timestamp", sWidth: '20%', "sType":"string", "bSortable": true}
+      {"sTitle": "Class", sWidth: '20%', "sType":"string", "bSortable": true}
     ];
                
     templateDatatable = $("#contentTable");
