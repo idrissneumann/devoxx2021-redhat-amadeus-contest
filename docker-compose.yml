@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  devoxxfr_amadeus_api:
+    image: comworkio/devoxxfr-amadeus-api
+    container_name: devoxxfr_amadeus_api
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: devoxxfr_amadeus_api
+    networks:
+      - devoxxfr_amadeus
+    ports:
+      - 8011:8080
+    env_file:
+      - .env
+
+networks:
+  devoxxfr_amadeus:
+    driver: bridge
