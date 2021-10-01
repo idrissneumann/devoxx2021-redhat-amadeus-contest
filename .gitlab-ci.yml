@@ -20,7 +20,7 @@ api:
 ui_fpm:
   stage: deliver
   script:
-    - setsid ./ci/docker-deliver.sh "arm" "devoxxfr-amadeus-ui-fpm" "1.0"
+    - setsid ./ci/docker-deliver.sh "x86" "devoxxfr-amadeus-ui-fpm" "1.0"
   only:
     refs:
       - /^(master.*)$/
@@ -36,7 +36,7 @@ ui_fpm:
 ui_nginx:
   stage: deliver
   script:
-    - setsid ./ci/docker-deliver.sh "arm" "devoxxfr-amadeus-ui-nginx" "1.0"
+    - setsid ./ci/docker-deliver.sh "x86" "devoxxfr-amadeus-ui-nginx" "1.0"
   only:
     refs:
       - /^(master.*)$/
