@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
 	$api_url = getenv('API_URL');
+	$api_url_inside_container = getenv('API_URL_INSIDE_CONTAINER');
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
     <head>
@@ -17,19 +18,7 @@
         <div class="appContent">
             <h1>Amadeus search</h1>
             <?php
-                $airports = array (
-                    "CDG" => "Paris CDG",
-                    "ORY" => "Paris Orly",
-                    "TUN" => "Tunis carthage",
-                    "CAI" => "Cairo",
-                    "MED" => "Madinah",
-                    "JED" => "Djeddah",
-                    "RUH" => "Riyadh",
-                    "SYD" => "Sydney",
-                    "BKK" => "Bankok",
-                    "SIN" => "Singapor",
-                    "HKG" => "Hong Kong"
-                );
+                $airports = json_decode(file_get_contents($api_url_inside_container . "/v1/airports"), true);
             ?>
 
             <form name="frmSearch" id="frmSearch" onsubmit="loadFlights('<?php echo $api_url; ?>'); return false;">
@@ -61,6 +50,7 @@
                 </select>&nbsp;
                 <input name="count" type="button" value="Search" onclick="loadFlights('<?php echo $api_url; ?>');">
             </form>
+			<br />
 		    <div id="contentTable"></div>
 		</div>
 	</body>
