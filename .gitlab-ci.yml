@@ -9,7 +9,6 @@ api:
     refs:
       - /^(master.*)$/
     changes:
-      - .gitlab-ci.yml
       - api/*
       - ci/docker-deliver.sh
       - docker-compose.yml
@@ -25,7 +24,6 @@ ui_fpm:
     refs:
       - /^(master.*)$/
     changes:
-      - .gitlab-ci.yml
       - ui/*
       - ci/docker-deliver.sh
       - docker-compose.yml
@@ -41,10 +39,10 @@ ui_nginx:
     refs:
       - /^(master.*)$/
     changes:
-      - .gitlab-ci.yml
       - ui/*
       - ci/docker-deliver.sh
       - docker-compose.yml
       - Dockerfile
+      - .docker/nginx/*
   tags:
     - devoxxfr
