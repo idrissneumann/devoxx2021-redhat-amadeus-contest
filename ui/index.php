@@ -38,11 +38,11 @@
                     foreach ($airports as $code => $name) {
                         echo "<option value=\"$code\">$name</option>";
                     }
-                 ?>
-                 </select>&nbsp;
+                ?>
+                </select>&nbsp;
 				
-                 Destination: <select id="destination">
-                 <?php
+                Destination: <select id="destination">
+                <?php
                     foreach ($airports as $code => $name) {
                         echo "<option value=\"$code\">$name</option>";
                     }
