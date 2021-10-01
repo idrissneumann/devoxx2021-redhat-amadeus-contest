@@ -15,6 +15,9 @@ def get_env_var(key, default_value):
         value = os.environ[ukey]
     return value
 
+def get_env_value(key):
+    return get_env_var(key, None)
+
 def is_true (var):
     if (isinstance(var, bool)):
         return var

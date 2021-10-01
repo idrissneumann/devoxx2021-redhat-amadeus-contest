@@ -1,3 +1,2 @@
 amadeus
 flask-restful
-requests
