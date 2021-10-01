@@ -1,7 +1,7 @@
 version: "3.8"
 
 services:
-  devoxxfr_amadeus_api:
+  devoxxfr-amadeus-api:
     image: comworkio/devoxxfr-amadeus-api:latest
     container_name: devoxxfr_amadeus_api
     restart: always
@@ -15,7 +15,7 @@ services:
       - 8011:8080
     env_file:
       - .env
-  devoxxfr_amadeus_ui_fpm:
+  devoxxfr-amadeus-ui-fpm:
     image: comworkio/devoxxfr-amadeus-ui-fpm:latest
     container_name: devoxxfr_amadeus_ui_fpm
     restart: unless-stopped
@@ -31,7 +31,7 @@ services:
       - devoxxfr_amadeus
     env_file:
       - .env
-  devoxxfr_amadeus_ui_nginx:
+  devoxxfr-amadeus-ui-nginx:
     image: comworkio/devoxxfr-amadeus-ui-nginx:latest
     container_name: devoxxfr_amadeus_ui_nginx
     restart: unless-stopped
