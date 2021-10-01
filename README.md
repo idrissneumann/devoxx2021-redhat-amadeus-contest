@@ -30,6 +30,12 @@ The images are available here:
 * https://hub.docker.com/r/comworkio/devoxxfr-amadeus-ui-fpm
 * https://hub.docker.com/r/comworkio/devoxxfr-amadeus-ui-nginx
 
+## Git repositories
+
+* Main repo: https://gitlab.comwork.io/oss/devoxx2021-redhat-amadeus-contest
+* Github mirror: https://github.com/idrissneumann/devoxx2021-redhat-amadeus-contest
+* Gitlab mirror: https://gitlab.com/ineumann/devoxx2021-redhat-amadeus-contest
+
 ## Local deployment with docker-compose
 
 ```shell
