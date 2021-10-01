@@ -15,6 +15,7 @@ Here's the dummy application that allow me to won this challenge at DevoxxFR 202
 * Python Flask Restful for the backend part
 * Plain old fascion JQuery and php for the frontend part
 * Docker of course, as always :p
+* Gitlab-ci for building and deliver the images
 * Amadeus API SDK: https://github.com/amadeus4dev/amadeus-python
 * RedHat developer sandbox: https://developers.redhat.com/developer-sandbox
 
