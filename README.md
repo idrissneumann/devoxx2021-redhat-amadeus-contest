@@ -2,7 +2,9 @@
 
 Here's the dummy application that allow me to won this challenge at DevoxxFR 2021 (9 3/4)!
 
-The application is deployed here: https://devoxx2021-redhat-amadeus-contest-ui.comwork.io
+The application is deployed here: 
+* UI: https://devoxx2021-redhat-amadeus-contest-ui.comwork.io
+* Restful API: https://devoxx2021-redhat-amadeus-contest-api.comwork.io
 
 ![devoxxfr](./img/devoxxfr.jpg)
 
@@ -47,4 +49,6 @@ Then you can go to:
 
 ![ui](./img/ui.png)
 
-The application is also deployed on my own infrastructure (with the same containers images): https://devoxx2021-redhat-amadeus-contest-ui.comwork.io
+The application is also deployed on my own infrastructure (with the same containers images): 
+* UI: https://devoxx2021-redhat-amadeus-contest-ui.comwork.io
+* Restful API: https://devoxx2021-redhat-amadeus-contest-api.comwork.io

@@ -1,6 +1,16 @@
 stages:
+  - mirror
   - deliver
   - deploy
+
+mirror:
+  stage: publish
+  script:
+    - setsid ./ci/mirror.sh
+  only:
+    - /^(master.*)$/
+  tags:
+    - devoxxfr
 
 api:
   stage: deliver
