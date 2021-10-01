@@ -23,7 +23,12 @@
 					"SIN" => "Singapor",
 					"HKG" => "Hong Kong",
 					"CDG" => "Paris CDG",
-					"TUN" => "Tunis carthage"
+					"ORY" => "Paris Orly",
+					"TUN" => "Tunis carthage",
+					"CAI" => "Cairo",
+					"MED" => "Madinah",
+					"JED" => "Djeddah",
+					"RUH" => "Riyadh"
 				);
 			?>
 			<form name="frmSearch" id="frmSearch" onsubmit="loadFlights('<?php echo $api_url; ?>'); return false;">
