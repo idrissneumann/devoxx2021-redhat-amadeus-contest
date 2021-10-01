@@ -1,0 +1,50 @@
+stages:
+  - deliver
+
+api:
+  stage: deliver
+  script:
+    - setsid ./ci/docker-deliver.sh "x86" "devoxxfr-amadeus-api" "1.0"
+  only:
+    refs:
+      - /^(master.*)$/
+    changes:
+      - .gitlab-ci.yml
+      - api/*
+      - ci/docker-deliver.sh
+      - docker-compose.yml
+      - Dockerfile
+  tags:
+    - devoxxfr
+
+ui_fpm:
+  stage: deliver
+  script:
+    - setsid ./ci/docker-deliver.sh "arm" "devoxxfr-amadeus-ui-fpm" "1.0"
+  only:
+    refs:
+      - /^(master.*)$/
+    changes:
+      - .gitlab-ci.yml
+      - ui/*
+      - ci/docker-deliver.sh
+      - docker-compose.yml
+      - Dockerfile
+  tags:
+    - devoxxfr
+
+ui_nginx:
+  stage: deliver
+  script:
+    - setsid ./ci/docker-deliver.sh "arm" "devoxxfr-amadeus-ui-nginx" "1.0"
+  only:
+    refs:
+      - /^(master.*)$/
+    changes:
+      - .gitlab-ci.yml
+      - ui/*
+      - ci/docker-deliver.sh
+      - docker-compose.yml
+      - Dockerfile
+  tags:
+    - devoxxfr
