@@ -1,0 +1,133 @@
+.datatable {
+    border: 0.06em solid #3577B2;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.datatable th {
+    background-color: #3577B2;
+    border-right: thin solid #80AFD9;
+    color: #FFFFFF;
+    font-family: verdana;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 0.35em 0.31em 0.4em;
+    text-align: left;
+}
+.datatable thead tr th.sorting_asc {
+    background-image: url("/ui/style/img/tri_asc.gif");
+    background-position: right center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    padding-right: 1em;
+}
+
+table thead tr th.sorting_desc {
+    background-image: url("/ui/style/img/tri_desc.gif");
+    background-position: right center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    padding-right: 1em;
+}
+
+table thead tr th.sorting {
+    background-image: url("/ui/style/img/tri_ad.gif");
+    background-position: right center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    padding-right: 1em;
+}
+
+.odd {
+    background-color: #E0E0E0;
+    border: 0 none;
+    color: #0F5390;
+    font-family: verdana;
+    font-size: 0.875em;
+    text-align: left;
+}
+
+.even {
+    background-color: #FFFFFF;
+    border: 0 none;
+    color: #0F5390;
+    font-family: verdana;
+    font-size: 0.875em;
+    text-align: left;
+}
+
+.datatable td {
+    border-right: thin solid #BCC1C5;
+    border-top: medium hidden;
+    height: 33px;
+    margin-bottom: 1em;
+    /*padding: 0.3em 0.5em 0.5em 0.3em;*/
+    vertical-align: middle;
+    font-size: 10px;
+}
+
+/* Full number pagination */
+.paging_full_numbers {
+    height: 22px;
+    line-height: 22px;
+    width: 400px;
+}
+
+.paging_two_button {
+    height: 22px;
+    line-height: 22px;
+    width: 400px;
+}
+
+.dataTables_paginate {
+	margin-top: 8px;
+	margin-right: 10em;
+    float: right;
+    text-align: right;
+}
+
+.paging_full_numbers span.paginate_button {
+    background-color: #DDDDDD;
+}
+.paging_full_numbers span.paginate_button, .paging_full_numbers span.paginate_active {
+    border: 1px solid #AAAAAA;
+    color: #333333 !important;
+    cursor: pointer;
+    margin: 0 3px;
+    padding: 2px 5px;
+}
+
+.paging_two_button div.paginate_disabled_previous, .paging_two_button div.paginate_disabled_next {
+    display:inline;
+    width:300px;
+    border: 1px solid #AAAAAA;
+    color: #333333 !important;
+    cursor: pointer;
+    margin: 0 3px;
+    padding: 2px 5px;
+}
+.paging_two_button div.paginate_enabled_previous, .paging_two_button div.paginate_enabled_next {
+    background-color: #DDDDDD;
+    display:inline;
+    width:300px;
+    border: 1px solid #AAAAAA;
+    color: #333333 !important;
+    cursor: pointer;
+    margin: 0 3px;
+    padding: 2px 5px;
+}
+
+.dataTables_info {
+    clear: both;
+    float: left;
+    margin-top: 10px;
+}
+
+.datatable a{
+    text-decoration:underline;
+}
+
+.datatable th.textAlignCenter{
+	text-align:center;
+}
+	

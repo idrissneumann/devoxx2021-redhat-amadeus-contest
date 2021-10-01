@@ -1,2 +1,3 @@
 amadeus
 flask-restful
+flask-cors

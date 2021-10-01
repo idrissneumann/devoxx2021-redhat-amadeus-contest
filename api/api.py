@@ -1,11 +1,13 @@
 from flask import Flask
 from flask_restful import Api
+from flask_cors import CORS
 
 from api_root import RootEndPoint
 from api_manifest import ManifestEndPoint
 from api_amadeus import AmadeusEndPoint
 
 app = Flask(__name__)
+cors = CORS(app, resources={r"/*": {"origins": "*"}})
 api = Api(app)
 
 health_check_routes = ['/', '/health', '/health/', '/v1/health', '/v1/health/']

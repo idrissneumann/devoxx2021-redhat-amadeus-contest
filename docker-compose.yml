@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   devoxxfr_amadeus_api:
-    image: comworkio/devoxxfr-amadeus-api
+    image: comworkio/devoxxfr-amadeus-api:latest
     container_name: devoxxfr_amadeus_api
     restart: always
     build:
@@ -13,6 +13,40 @@ services:
       - devoxxfr_amadeus
     ports:
       - 8011:8080
+    env_file:
+      - .env
+  devoxxfr_amadeus_ui_fpm:
+    image: comworkio/devoxxfr-amadeus-ui-fpm:latest
+    container_name: devoxxfr_amadeus_ui_fpm
+    restart: unless-stopped
+    build:
+      args:
+        user: ${C_USERNAME}
+        uid: ${C_UID}
+        home: ${C_HOME}
+      context: .
+      dockerfile: Dockerfile
+      target: devoxxfr_amadeus_ui_fpm
+    networks:
+      - devoxxfr_amadeus
+    env_file:
+      - .env
+  devoxxfr_amadeus_ui_nginx:
+    image: comworkio/devoxxfr-amadeus-ui-nginx:latest
+    container_name: devoxxfr_amadeus_ui_nginx
+    restart: unless-stopped
+    build:
+      args:
+        user: ${C_USERNAME}
+        uid: ${C_UID}
+        home: ${C_HOME}
+      context: .
+      dockerfile: Dockerfile
+      target: devoxxfr_amadeus_ui_nginx
+    ports:
+      - 8012:80
+    networks:
+      - devoxxfr_amadeus
     env_file:
       - .env
 
