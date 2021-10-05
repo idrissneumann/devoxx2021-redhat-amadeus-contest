@@ -66,3 +66,5 @@ The application is also deployed on my own portainer.io based infrastructure (wi
 * Restful API: https://devoxx2021-redhat-amadeus-contest-api.comwork.io
 
 ![portainer](./img/portainer.png)
+
+If you want to try to deploy on a local portainer instance hosted on Kubernetes, try this [demo](https://gitlab.comwork.io/oss/demo-portainer-k8s)
