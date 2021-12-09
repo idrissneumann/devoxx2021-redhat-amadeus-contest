@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REPO_PATH="/home/centos/devoxx2021-redhat-amadeus-contest/"
+REPO_PATH="${PROJECT_HOME}/devoxx2021-redhat-amadeus-contest/"
 
 cd "${REPO_PATH}" && git pull origin master || :
 git push github master 

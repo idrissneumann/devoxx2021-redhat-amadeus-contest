@@ -5,7 +5,6 @@ REPO_PATH="${BASE_DIR}/.."
 ARCH="${1}"
 IMAGE="${2}"
 VERSION="${3}"
-
 [[ $ARCH ]] || ARCH="x86"
 
 tag_and_push() {
