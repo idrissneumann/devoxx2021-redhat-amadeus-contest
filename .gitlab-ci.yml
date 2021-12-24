@@ -25,7 +25,7 @@ api:
       - docker-compose.yml
       - Dockerfile
   tags:
-    - devoxxfr
+    - devoxxfr-build
 
 ui_fpm:
   stage: deliver
@@ -40,7 +40,7 @@ ui_fpm:
       - docker-compose.yml
       - Dockerfile
   tags:
-    - devoxxfr
+    - devoxxfr-build
 
 ui_nginx:
   stage: deliver
@@ -56,7 +56,7 @@ ui_nginx:
       - Dockerfile
       - .docker/nginx/*
   tags:
-    - devoxxfr
+    - devoxxfr-build
 
 deploy:
   stage: deploy
