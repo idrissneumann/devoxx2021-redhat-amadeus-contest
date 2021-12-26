@@ -10,7 +10,7 @@ mirror:
   only:
     - /^(master.*)$/
   tags:
-    - devoxxfr
+    - mirror
 
 api:
   stage: deliver
